@@ -1,11 +1,6 @@
 <?php
 
-foreach (range('A', 'Z') as $letter) {
-    echo $letter;
-    if ($letter !== 'Z') {
-        echo ' | ';
-    }
-}
+foreach (range('A', 'Z') as $letter) echo $letter . ' | ';
 
 echo PHP_EOL;
 ?>
