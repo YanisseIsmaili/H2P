@@ -9,6 +9,7 @@ do {
         break;
     } elseif ($nbrRicard == 5) {
         echo "I am no longer very fresh...\n";
+        break;
     }
 
     $nbrRicard++;
