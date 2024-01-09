@@ -4,7 +4,7 @@ $today = function() {
     $dayNumber = date("j");
     $month = date("F");
     $year = date("Y");
-    $result = 'It is 0' . $month . ' ' . $dayNumber . ', ' . $year;
+    $result = 'It is ' . $month . ' 0' . $dayNumber . ', ' . $year;
     return $result;
 };
 
