@@ -4,7 +4,7 @@ $today = function() {
     $dayNumber = date("j");
     $month = date("F");
     $year = date("Y");
-    $result = 'It is ' . $month . ' ' . $dayNumber . ', ' . $year;
+    $result = 'It is 0' . $month . ' ' . $dayNumber . ', ' . $year;
     return $result;
 };
 
@@ -18,5 +18,6 @@ $isLeapYear = function($yearl){
     else
         return False;
 };
+
 
 ?>
