@@ -7,6 +7,7 @@ function myArrayMap(?callable $callback, array $array, array ...$arrays): array
         if (empty($arrays)) {
             return array_values($array);
         }
+
         $result = [];
         foreach ($array as $key => $value) {
             $merged = [$value];
@@ -15,6 +16,7 @@ function myArrayMap(?callable $callback, array $array, array ...$arrays): array
             }
             $result[] = $merged;
         }
+
         if ($callback !== null && is_callable($callback)) {
             // Check if the callback returns an associative array
             $firstResult = $callback($result[0]);
@@ -22,12 +24,16 @@ function myArrayMap(?callable $callback, array $array, array ...$arrays): array
                 return array_values($result);
             }
         }
+
         return array_values($result);
+
     }
     if (count($array) === 0) {
         return [];
     }
+
     $result = [];
+
     foreach ($array as $key => $value) {
         $args = [$value];
         foreach ($arrays as $arr) {
@@ -35,6 +41,8 @@ function myArrayMap(?callable $callback, array $array, array ...$arrays): array
         }
         $result[] = $callback(...$args);
     }
+
     return $result;
 }
+
 ?>
