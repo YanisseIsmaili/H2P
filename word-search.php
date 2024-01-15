@@ -1,4 +1,5 @@
 <?php
+function searchWord(array $board,string $word) : bool {
 
 $board = [
     ['a', 'b', 'c', 'd'],
