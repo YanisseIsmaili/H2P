@@ -68,6 +68,18 @@ function merge(?array $array1 = null, array $array2, array $array3): array
     return $res;
 }
 
+/* print("test 1 : reverse\n");
+print_r(reverse([1, 2, 3])); // [3, 2, 1]
+print("\ntest 2 : push\n");
+$tab = [];
+print_r(push($tab, "first", "second", "five")); // 3
+print("\ntest 3 : sum\n");
+print_r(sum([1, 2, 3])); // 6
+print("\ntest 4 : contains\n");
+$tab2 = [1, 2, 3];
+print_r(arrayContains($tab2, 1)); // 2
+print("\ntest 5 : merge\n");
+print_r(merge([1, 2, 3], [4, 5, 6], [7, 8, 9])); // [1, 2, 3, 4, 5, 6, 7, 8, 9] */
 $tab = [];
 print_r(push($tab, "first", "second", "five", "10"));
 print_r($tab);
