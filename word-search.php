@@ -1,4 +1,5 @@
 <?php
+
 function searchWord(array $board,string $word) : bool {
     $split_word = str_split($word);
     $cpt = 0;
@@ -22,8 +23,4 @@ $board = [
     ['m', 'f', 'b', 's']
 ];
 
-function searchWord(array $array, string $word){
-
-}
-
-?>
+var_dump(searchWord($board, 'abck'));   // true
