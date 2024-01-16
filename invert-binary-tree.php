@@ -1,5 +1,5 @@
 <?php
-    function invertTree ($BinaryNode): BinaryNode|null
+    function invertTree($BinaryNode): BinaryNode|null
     {
         if ($BinaryNode === null) {
             return null;
