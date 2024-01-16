@@ -48,6 +48,7 @@
         }
 
     }
+    
     class Triangle extends AbstractGeometry
     {
         private int|float $side1;
