@@ -38,5 +38,5 @@
             echo "\n";
             return $this;
         }
-        // abdel zebii 
+        // abdel zebii
     }
