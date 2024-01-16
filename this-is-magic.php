@@ -4,4 +4,8 @@
         public string $card;
         
         public function __construct(string $card = "As")
+        {
+
+            echo "initialise l'object instancié"
+        }
     }
