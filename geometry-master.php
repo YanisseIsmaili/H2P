@@ -27,4 +27,29 @@
             return ($this->width + $this->height) * 2;
         }
     }
-    
+
+    class Triangle extends AbstractGeometry
+    {
+        private int|float $side1;
+        private int|float $side2;
+        private int|float $side3;
+
+        public function __construct(int|float $side1 = 0, int|float $side2 = 0, int|float $side3 =0)
+        {
+            $this->side1 = $side1;
+            $this->side2 = $side2;
+            $this->side3 = $side3;
+        }
+
+        public function area(): int|float
+        {
+            $p = ($this->side1 + $this->side2 + $this->side3) / 2;
+            return sqrt($p * ($p - $this->side1) * ($p - $this->side2) * ($p - $this->side3));
+        }
+
+        public function perimeter(): int|float
+        {
+            return $this->side1 + $this->side2 + $this->side3;
+        }
+
+    }
