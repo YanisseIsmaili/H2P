@@ -1,6 +1,7 @@
 <?php
     class Magic
     {
-        pblic string $card;
+        public string $card;
         
+        public function __construct(string $card = "As")
     }
