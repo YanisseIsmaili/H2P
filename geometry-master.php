@@ -28,6 +28,26 @@
         }
     }
 
+    class Square extends AbstractGeometry
+    {
+        private int|float $side;
+
+        public function __construct(int|float $side = 0)
+        {
+            $this->side = $side;
+        }
+
+        public function area(): int|float
+        {
+            return $this->side * $this->side;
+        }
+
+        public function perimeter(): int|float
+        {
+            return $this->side * 4;
+        }
+
+    }
     class Triangle extends AbstractGeometry
     {
         private int|float $side1;
@@ -53,3 +73,5 @@
         }
 
     }
+    
+    /* print_r((new Triangle(6,6,6))->area()); */
