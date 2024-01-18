@@ -1,5 +1,4 @@
 <?php
-<?php
 Class Song {
     public string  $artist;
     public string $title;
